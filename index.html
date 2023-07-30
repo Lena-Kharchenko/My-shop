@@ -5,41 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" type="image/svg" href="./images/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>My shop</title>
+    <title>My garden&house tools</title>
   </head>
   <body>
-    <header class="main-header">
-      <a class="shop-logo" href="./index.html">МаЙсТеР</a>
+    <header class="header">
+      <div class="container page-header">
+        <a class="shop-logo" href="./index.html">МаЙсТеР</a>
+        <ul class="head-links">
+          <li class="head-item">
+            <a class="link head-item-link" href="каталог"> Каталог</a>
+          </li>
 
-      <ul>
-        <li>
-          <a href="mailto:email.com.ua">email.com.ua</a>
-        </li>
-        <li>
-          <a href="tel:+0989898989">tel:0989898989</a>
-        </li>
-      </ul>
+          <li class="head-item">
+            <a class="link head-item-link" href="доставка">Доставка і оплата</a>
+          </li>
+          <li class="head-item">
+            <a class="link head-item-link" href="сервіс">Сервіс</a>
+          </li>
+        </ul>
+        <form class="search-form" action="search">
+          <input type="text" placeholder="пошук товарів" />
+        </form>
+
+        <ul class="contacts">
+          <li class="contact-link">
+            <a class="link contact-mail" href="mailto:email.com.ua"
+              >email.com.ua</a
+            >
+          </li>
+          <li class="contact-link">
+            <a class="link contact-phone" href="tel:+0989898989"
+              >tel:0989898989</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <h1>Магазин "Майстер"</h1>
-        <h2>Категорії товарів</h2>
-        <ul>
-          <li>Бензоінструмент</li>
-          <img src="./images/пила2.png" alt="бензопила" />
-          <li>Електроінструмент</li>
-          <img src="./images/дриль.jpg" alt="дриль" />
-          <li>Акумуляторний інструмент</li>
-          <img src="./images/шурик.jpg" alt="шурупокрут" />
-          <li>Запчастини</li>
-          <img src="./images/запчастини.jpg" alt="запчастини" />
-        </ul>
+        <div class="container">
+          <h1 class="shop-title">Магазин "Майстер"</h1>
+          <h2>Категорії товарів</h2>
+          <ul>
+            <li>
+              <p>
+                <svg class="tool-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-garden-tool"></use>
+                </svg>
+                Садово-паркова техніка
+              </p>
+              <img src="./images/пила2.png" alt="бензопила" />
+            </li>
+            <li>
+              <p>
+                <svg class="tool-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-angle-grinder"></use>
+                </svg>
+                Електроінструмент
+              </p>
+              <img src="./images/дриль.jpg" alt="дриль" />
+            </li>
+
+            <li>
+              <p>
+                <svg class="tool-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-screwdriver"></use>
+                </svg>
+
+                Акумуляторний інструмент
+              </p>
+
+              <img src="./images/шурик.jpg" alt="шурупокрут" />
+            </li>
+            <li>
+              <p>
+                <svg class="tool-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-zapchastunu"></use>
+                </svg>
+                Запчастини та аксесуари
+              </p>
+
+              <img src="./images/запчастини.jpg" alt="запчастини" />
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer-part">
