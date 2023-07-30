@@ -1,15 +1,112 @@
-.main-header {
-    background-color: aqua;
+:root {
+  --primary-font: "Montserrat", sans-serif;
+  --primary-color: #ffffff;
+  --secondary-color: #30ffb4;
+  --violet-color: #570d82;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  background-color: var(--violet-color);
 }
 
 .shop-logo {
-    color: rgb(198, 96, 92);
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+
+.head-links {
+  display: flex;
+}
+
+.head-item {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.head-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.head-item-link:hover,
+.head-item-link:focus {
+  color: var(--secondary-color);
+}
+
+.search-form {
+  padding-left: 40px;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contact-mail,
+.contact-phone {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.contact-link {
+  padding-left: 40px;
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+  color: var(--secondary-color);
+}
+
+.contact-phone:hover,
+.contact-phone:focus {
+  color: var(--secondary-color);
 }
 
 .hero {
-    background-color: yellow;
+  background-color: var(--secondary-color);
+  background-image: linear-gradient(
+      rgba(209, 187, 245, 0.7),
+      rgba(209, 187, 245, 0.7)
+    ),
+    url(/images/bd-img.jpg);
+  background-size: cover;
 }
 
+.shop-title {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 72px;
+  color: var(--violet-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tool-icon {
+  fill: var(--secondary-color);
+}
 .footer-part {
-    background-color: rgb(99, 99, 249);
+  background-color: var(--violet-color);
 }
