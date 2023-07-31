@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="shortcut icon" type="image/svg" href="./images/favicon.svg" />
+    <link rel="shortcut icon" type="image/svg" href="./assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,94 +15,140 @@
     <title>My garden&house tools</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container page-header">
-        <a class="shop-logo" href="./index.html">МаЙсТеР</a>
-        <ul class="head-links">
-          <li class="head-item">
-            <a class="link head-item-link" href="каталог"> Каталог</a>
-          </li>
+    <header class="header container page-header">
+      <a href="./index.html">
+        <img class="shop-logo" src="./assets/tools.svg" alt="tools" />
+      </a>
+      <ul class="head-nav">
+        <li class="head-item">
+          <a class="link head-item-link" href="каталог"> Каталог</a>
+        </li>
+        <li class="head-item">
+          <a class="link head-item-link" href="доставка">Доставка і оплата</a>
+        </li>
+        <li class="head-item">
+          <a class="link head-item-link" href="сервіс">Сервіс</a>
+        </li>
+      </ul>
 
-          <li class="head-item">
-            <a class="link head-item-link" href="доставка">Доставка і оплата</a>
-          </li>
-          <li class="head-item">
-            <a class="link head-item-link" href="сервіс">Сервіс</a>
-          </li>
-        </ul>
-        <form class="search-form" action="search">
-          <input type="text" placeholder="пошук товарів" />
-        </form>
+      <input class="hero-input-field" type="text" placeholder="пошук товарів" />
 
-        <ul class="contacts">
-          <li class="contact-link">
-            <a class="link contact-mail" href="mailto:email.com.ua"
-              >email.com.ua</a
-            >
-          </li>
-          <li class="contact-link">
-            <a class="link contact-phone" href="tel:+0989898989"
-              >tel:0989898989</a
-            >
-          </li>
-        </ul>
-      </div>
+      <ul class="contacts">
+        <li class="contact-link">
+          <a class="link contact-mail" href="mailto:email.com.ua"
+            >email.com.ua</a
+          >
+        </li>
+        <li class="contact-link">
+          <a class="link contact-phone" href="tel:+0989898989"
+            >tel:0989898989</a
+          >
+        </li>
+
+        <li><i class="bi bi-basket2"></i></li>
+      </ul>
     </header>
     <main>
-      <section class="hero">
-        <div class="container">
-          <h1 class="shop-title">Магазин "Майстер"</h1>
-          <h2>Категорії товарів</h2>
-          <ul>
-            <li>
-              <p>
-                <svg class="tool-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-garden-tool"></use>
-                </svg>
-                Садово-паркова техніка
-              </p>
-              <img src="./images/пила2.png" alt="бензопила" />
-            </li>
-            <li>
-              <p>
-                <svg class="tool-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-angle-grinder"></use>
-                </svg>
-                Електроінструмент
-              </p>
-              <img src="./images/дриль.jpg" alt="дриль" />
-            </li>
+      <section class="hero container">
+        <h1 class="shop-title">Магазин "Майстер"</h1>
+        <h2>Категорії товарів</h2>
+        <ul class="category-tools">
+          <li class="category-tools-item">
+            <p class="category-title">
+              <svg class="tool-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-garden-tool"></use>
+              </svg>
+              Садово-паркова техніка
+            </p>
+            <img src="./images/пила2.png" alt="бензопила" />
+          </li>
+          <li class="category-tools-item">
+            <p class="category-title">
+              <svg class="tool-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-angle-grinder"></use>
+              </svg>
+              Електроінструмент
+            </p>
+            <img src="./images/дриль.jpg" alt="дриль" />
+          </li>
 
-            <li>
-              <p>
-                <svg class="tool-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-screwdriver"></use>
-                </svg>
+          <li class="category-tools-item">
+            <p class="category-title">
+              <svg class="tool-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-screwdriver"></use>
+              </svg>
 
-                Акумуляторний інструмент
-              </p>
+              Акумуляторний інструмент
+            </p>
 
-              <img src="./images/шурик.jpg" alt="шурупокрут" />
-            </li>
-            <li>
-              <p>
-                <svg class="tool-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-zapchastunu"></use>
-                </svg>
-                Запчастини та аксесуари
-              </p>
+            <img src="./images/шурик.jpg" alt="шурупокрут" />
+          </li>
+          <li class="category-tools-item">
+            <p class="category-title">
+              <svg class="tool-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-zapchastunu"></use>
+              </svg>
+              Запчастини та аксесуари
+            </p>
 
-              <img src="./images/запчастини.jpg" alt="запчастини" />
-            </li>
-          </ul>
-        </div>
+            <img src="./images/запчастини.jpg" alt="запчастини" />
+          </li>
+          <li class="category-tools-item">
+            <p class="category-title">
+              <svg
+                class="custom-tool-icon"
+                width="32"
+                height="32"
+                fill="#007bff"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use
+                  xlink:href="./path/to/your/icons.svg#your-custom-icon"
+                ></use>
+              </svg>
+              Садово-паркова техніка
+            </p>
+            <img src="./images/пила2.png" alt="бензопила" />
+          </li>
+          <li class="category-tools-item">
+            <p class="category-title">
+              <svg class="tool-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-angle-grinder"></use>
+              </svg>
+              Електроінструмент
+            </p>
+            <img src="./images/дриль.jpg" alt="дриль" />
+          </li>
+
+          <li class="category-tools-item">
+            <p class="category-title">
+              <svg class="tool-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-screwdriver"></use>
+              </svg>
+
+              Акумуляторний інструмент
+            </p>
+
+            <img src="./images/шурик.jpg" alt="шурупокрут" />
+          </li>
+          <li class="category-tools-item">
+            <p class="category-title">
+              <svg class="tool-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-zapchastunu"></use>
+              </svg>
+              Запчастини та аксесуари
+            </p>
+
+            <img src="./images/запчастини.jpg" alt="запчастини" />
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer-part">
-      <form>
-        <label for="email">Subscribe</label>
-        <input type="email" placeholder="email" />
-        <button type="submit">Subscribe</button>
+      <form class="footer-form">
+        <label class="footer-form-label" for="email">Subscribe</label>
+        <input class="footer-input-field" type="email" placeholder="email" />
+        <button class="footer-btn" type="submit">Subscribe</button>
       </form>
     </footer>
   </body>
