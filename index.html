@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="shortcut icon" type="image/svg" href="./assets/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,10 +19,17 @@
     <title>My garden&house tools</title>
   </head>
   <body>
-    <header class="header container page-header">
-      <a href="./index.html">
-        <img class="shop-logo" src="./assets/tools.svg" alt="tools" />
-      </a>
+    <!--======================================= HEADER ===========================================-->
+
+    <header class="header container">
+      <img
+        class="shop-logo"
+        src="./assets/tools.svg"
+        alt="tools"
+        width="52"
+        height="52"
+      />
+
       <ul class="head-nav">
         <li class="head-item">
           <a class="link head-item-link" href="каталог"> Каталог</a>
@@ -44,102 +55,92 @@
             >tel:0989898989</a
           >
         </li>
-
-        <li><i class="bi bi-basket2"></i></li>
       </ul>
+
+      <a href="./index.html"><i class="bi bi-basket2"></i></a>
     </header>
+
+    <!--======================================= HERO ===========================================-->
     <main>
       <section class="hero container">
         <h1 class="shop-title">Магазин "Майстер"</h1>
-        <h2>Категорії товарів</h2>
+        <h2 class="category">Категорії товарів</h2>
         <ul class="category-tools">
           <li class="category-tools-item">
             <p class="category-title">
-              <svg class="tool-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-garden-tool"></use>
-              </svg>
+              <img class="small-svg" src="./assets/lawnmower.svg" alt="lawn mower" />
+
               Садово-паркова техніка
             </p>
-            <img src="./images/пила2.png" alt="бензопила" />
+            <img src="./assets/chainsaw.png" alt="chainsaw" />
           </li>
           <li class="category-tools-item">
             <p class="category-title">
-              <svg class="tool-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-angle-grinder"></use>
-              </svg>
+              <img class="small-svg" src="./assets/driller.svg" alt="drill" />
+
               Електроінструмент
             </p>
-            <img src="./images/дриль.jpg" alt="дриль" />
+            <img src="./assets/drill.jpg" alt="drill" />
           </li>
 
           <li class="category-tools-item">
             <p class="category-title">
-              <svg class="tool-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-screwdriver"></use>
-              </svg>
-
+              <img class="small-svg" 
+                src="./assets/smartline.svg"
+                alt="cordless tool"
+                
+              />
               Акумуляторний інструмент
             </p>
 
-            <img src="./images/шурик.jpg" alt="шурупокрут" />
+            <img src="./assets/screwdriver2.jpg" alt="screwdriver" />
           </li>
           <li class="category-tools-item">
             <p class="category-title">
-              <svg class="tool-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-zapchastunu"></use>
-              </svg>
+              <img  class="small-svg" src="./assets/spare parts.svg" alt="spare parts" />
               Запчастини та аксесуари
             </p>
 
-            <img src="./images/запчастини.jpg" alt="запчастини" />
+            <img src="./assets/spare parts2.jpg" alt="spare parts" />
           </li>
+
           <li class="category-tools-item">
             <p class="category-title">
-              <svg
-                class="custom-tool-icon"
-                width="32"
-                height="32"
-                fill="#007bff"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <use
-                  xlink:href="./path/to/your/icons.svg#your-custom-icon"
-                ></use>
-              </svg>
+              <img class="small-svg" src="./assets/lawnmower.svg" alt="lawn mower" />
+
               Садово-паркова техніка
             </p>
-            <img src="./images/пила2.png" alt="бензопила" />
+            <img src="./assets/chainsaw.png" alt="chainsaw" />
           </li>
           <li class="category-tools-item">
             <p class="category-title">
-              <svg class="tool-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-angle-grinder"></use>
-              </svg>
+              <img class="small-svg" src="./assets/driller.svg" alt="drill" />
+
               Електроінструмент
             </p>
-            <img src="./images/дриль.jpg" alt="дриль" />
+            <img src="./assets/drill.jpg" alt="drill" />
           </li>
 
           <li class="category-tools-item">
             <p class="category-title">
-              <svg class="tool-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-screwdriver"></use>
-              </svg>
-
+              <img class="small-svg" 
+                src="./assets/smartline.svg"
+                alt="cordless tool"
+                width="20"
+                height="20"
+              />
               Акумуляторний інструмент
             </p>
 
-            <img src="./images/шурик.jpg" alt="шурупокрут" />
+            <img src="./assets/screwdriver2.jpg" alt="screwdriver" />
           </li>
           <li class="category-tools-item">
             <p class="category-title">
-              <svg class="tool-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-zapchastunu"></use>
-              </svg>
+              <img class="small-svg" src="./assets/spare parts.svg" alt="spare parts" />
               Запчастини та аксесуари
             </p>
 
-            <img src="./images/запчастини.jpg" alt="запчастини" />
+            <img src="./assets/spare parts2.jpg" alt="spare parts" />
           </li>
         </ul>
       </section>
