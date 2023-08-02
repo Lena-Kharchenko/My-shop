@@ -27,9 +27,11 @@ button {
   cursor: pointer;
 }
 
-/* img {
+img {
   display: block;
-} */
+  max-width: 100%;
+  
+}
 
 body {
   font-family: var(--primary-font);
@@ -43,6 +45,8 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+
 
 .header {
   display: flex;
@@ -146,17 +150,16 @@ body {
   font-size: 36px;
   color: var(--violet-color);
   text-align: center;
-  margin-top: 16px;
+
 }
 
 .category-title {
+  display: flex;
   font-size: 24px;
-  width: 220px;
-  text-align: inherit;
-  cursor: pointer;
-  margin-bottom: 8px;
+  padding: 8px;
   color: var(--violet-color);
   transition: color var(--transition-dur-func);
+  
 }
 
 .category-title:hover,
@@ -169,11 +172,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   margin-top: 16px;
-  gap: 40px;
+  gap: 20px;
   
 }
+
+.category-tools-item {
+  width: calc((100% - 60px) / 4);
+}
+
+ 
 
 
 
@@ -181,6 +190,7 @@ body {
 .small-svg {
   width: 24px;
   height: 24px;
+  margin-right: 8px;
  
   
 }
@@ -254,6 +264,10 @@ body {
 .bi-geo-alt-fill {
   color: var(--secondary-color);
 }
+
+
+
+
 
 
 
