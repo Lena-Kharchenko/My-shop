@@ -2,15 +2,13 @@
 
 :root {
   --primary-font: "Montserrat", sans-serif;
-  --primary-color:#FFFFF6;
+  --primary-color: #fffff6;
   --secondary-color: #30ffb4;
-  --violet-color:#150140;
+  --violet-color: #150140;
   --transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-/* #570d82 violet*/ 
+/* #570d82 violet*/
 /* #30ffb4 green */
 
 h1,
@@ -21,8 +19,7 @@ p {
   margin-bottom: 0;
 }
 
-ul,
-ol {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -31,28 +28,29 @@ ol {
 button {
   cursor: pointer;
 }
-figure{
-  width: 200px;
-  height: 200px;
-  background-color: grey;
-  position: relative;
-  overflow: hidden;
+
+html {
+  height: 100%;
 }
-
-img {
-  display: block;
-  object-fit: contain;
-  max-width: 100%;
-  
-}
-
-
 
 body {
-  
-  font-family: var(--primary-font);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+main {
+  flex-grow: 1;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: var(--primary-font);
+}
 
 .link {
   text-decoration: none;
@@ -62,8 +60,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-
 
 .header {
   display: flex;
@@ -77,12 +73,10 @@ body {
   margin-right: 24px;
 }
 
-
 .head-nav {
   display: flex;
   margin-left: 36px;
 }
-
 
 .head-item-link {
   font-size: 18px;
@@ -142,6 +136,8 @@ body {
 
 .shop-logo {
   fill: #30ffb4;
+  width: 52px;
+  height: 52px;
 }
 
 .hero {
@@ -155,68 +151,108 @@ body {
   padding-bottom: 24px;
 }
 
-.shop-title {
+.shop-title,
+.delivery-title {
   font-weight: 600;
   font-size: 56px;
+  margin-bottom: 12px;
   color: var(--violet-color);
   text-align: center;
   padding-top: 24px;
 }
 
-.category {
+.category,
+.schedule {
   font-size: 36px;
   color: var(--violet-color);
   text-align: center;
+  margin-bottom: 24px;
+}
 
+.delivery-payment {
+  font-size: 28px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.text {
+  font-size: 24px;
+  padding-bottom: 15px;
 }
 
 .category-title {
   display: flex;
+  justify-content: center;
   font-size: 24px;
   padding: 8px;
   color: var(--violet-color);
   transition: color var(--transition-dur-func);
-  
 }
 
 .category-title:hover,
 .category-title:focus {
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
 
-
 .category-tools {
+  justify-content: center;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+}
+
+.category-tools-item {
+  border: 1px solid red;
+  /* height: 250px; */
+}
+
+img {
+  display: block;
+  width: 280px;
+  height: 230px;
+  transition: transform 0.25s;
+}
+
+.figure-img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 280px;
+  height: 230px;
+  background-color: grey;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.figure-img:hover img {
+  transform: scale(1.1);
+}
+
+/* .category-tools {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 16px;
   gap: 20px;
-  
 }
 
 .category-tools-item {
   width: calc((100% - 60px) / 4);
-}
-
- 
-
-
-
+} */
 
 .small-svg {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   margin-right: 8px;
- 
-  
+  fill: #150140;
 }
 
 .footer-part {
-  
   background-color: var(--violet-color);
   padding: 24px;
-
+  margin-top: auto;
 }
 
 .footer-form-label {
@@ -250,29 +286,33 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 18px;
-  
+
   margin-bottom: 12px;
   cursor: pointer;
-  
 }
 
 .footer-item {
-
+  margin-bottom: 12px;
   color: var(--primary-color);
   transition: color var(--transition-dur-func);
-
 }
-
-
 
 .footer-item:hover,
 .footer-item:focus {
   color: var(--secondary-color);
 }
 
+.footer-pay {
+  display: flex;
+}
 
+.footer-small-svg {
+  width: 42px;
+  height: 42px;
+  margin-left: 15px;
+}
 
 .footer-copyright {
   font-size: 14px;
@@ -283,11 +323,3 @@ body {
 .bi-geo-alt-fill {
   color: var(--secondary-color);
 }
-
-
-
-
-
-
-
-

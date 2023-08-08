@@ -11,27 +11,34 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="shortcut icon" type="image/svg" href="./assets/favicon.svg" />
   </head>
+
   <body>
     <header class="header container">
-      <img
-        class="shop-logo"
-        src="./assets/tools.svg"
-        alt="tools"
-        width="52"
-        height="52"
-      />
+      <nav class="navigation">
+        <a href="./index.html">
+          <img
+            class="shop-logo"
+            src="./assets/tools.svg"
+            alt="tools"
+            width="52"
+            height="52"
+          />
+        </a>
 
-      <ul class="head-nav">
-        <li class="head-item">
-          <a class="link head-item-link" href="каталог"> Каталог</a>
-        </li>
-        <li class="head-item">
-          <a class="link head-item-link" href="доставка">Доставка і оплата</a>
-        </li>
-        <li class="head-item">
-          <a class="link head-item-link" href="сервіс">Сервіс</a>
-        </li>
-      </ul>
+        <ul class="head-nav">
+          <li class="head-item">
+            <a class="link head-item-link" href="./index.html"> Каталог</a>
+          </li>
+          <li class="head-item">
+            <a class="link head-item-link" href="./delivery.html"
+              >Доставка і оплата</a
+            >
+          </li>
+          <li class="head-item">
+            <a class="link head-item-link" href="./service.html">Сервіс</a>
+          </li>
+        </ul>
+      </nav>
 
       <input class="hero-input-field" type="text" placeholder="пошук товарів" />
 
@@ -50,31 +57,76 @@
 
       <a href="./index.html"><i class="bi bi-basket2"></i></a>
     </header>
+
     <main>
       <section class="hero container">
-        <h1>Доставка товару</h1>
+        <h1 class="delivery-title">Доставка товару</h1>
+        <h2 class="schedule">РЕЖИМ РОБОТИ:</h2>
+        <p class="text">
+          Прийом замовлень на сайті – цілодобово. Замовлення по телефону з 09.00
+          до 17.00 (вт-пт), з 09.00 до 16.00 (сб-нд). Замовлення в телефонному
+          режимі: з будь-якої нагоди, якщо не вдалося зв’язатися з нами, – ми
+          обов’язково зателефонуємо пізніше!
+        </p>
+
+        <h3 class="delivery-payment">Способи доставки:</h3>
+        <ul>
+          <li class="text">
+            Доставка в відділення / кур’єрською службою ТК “Нова пошта”
+            www.novaposhta.com.ua;
+          </li>
+          <li class="text">Самовивіз (Біла Церква).</li>
+        </ul>
+        <p>
+          * Вартість доставки розраховується згідно з тарифами транспортної
+          компанії.
+        </p>
+        <h3 class="delivery-payment">Способи оплати:</h3>
+        <ul>
+          <li class="text">Оплата на розрахунковий рахунок.</li>
+          <li class="text">Оплата на картку.</li>
+          <li class="text">Накладений платіж.</li>
+        </ul>
       </section>
     </main>
-    <footer class="footer-part">
-      <ul class="footer-menu">
-        <li class="footer-item">Каталог</li>
-        <li class="footer-item">Доставка і оплата</li>
-        <li class="footer-item">
-          <i class="bi bi-geo-alt-fill"></i>
-          Контакти
-        </li>
-        <li>
-          <form class="footer-form">
-            <label class="footer-form-label" for="email">Subscribe</label>
-            <input
-              class="footer-input-field"
-              type="email"
-              placeholder="email"
+
+    <footer class="footer-part container">
+      <div class="footer-menu">
+        <ul>
+          <li class="footer-item">Каталог</li>
+          <li class="footer-item">Доставка і оплата</li>
+          <li class="footer-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            Контакти
+          </li>
+        </ul>
+
+        <ul class="footer-pay">
+          <li>
+            <img class="footer-small-svg" src="./assets/visa.svg" alt="visa" />
+          </li>
+          <li>
+            <img
+              class="footer-small-svg"
+              src="./assets/applepay.svg"
+              alt="applepay"
             />
-            <button class="footer-btn" type="submit">Subscribe</button>
-          </form>
-        </li>
-      </ul>
+          </li>
+          <li>
+            <img
+              class="footer-small-svg"
+              src="./assets/googlepay.svg"
+              alt="googlepay"
+            />
+          </li>
+        </ul>
+
+        <form class="footer-form">
+          <label class="footer-form-label" for="email">Subscribe</label>
+          <input class="footer-input-field" type="email" placeholder="email" />
+          <button class="footer-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
       <p class="footer-copyright">
         © 2023 Магазин "Майстер". Всі права захищені.
       </p>
