@@ -152,7 +152,8 @@ body {
 }
 
 .shop-title,
-.delivery-title {
+.delivery-title,
+.service-title {
   font-weight: 600;
   font-size: 56px;
   margin-bottom: 12px;
@@ -162,7 +163,8 @@ body {
 }
 
 .category,
-.schedule {
+.schedule,
+.explanation {
   font-size: 36px;
   color: var(--violet-color);
   text-align: center;
@@ -176,7 +178,7 @@ body {
 }
 
 .text {
-  font-size: 24px;
+  font-size: 18px;
   padding-bottom: 15px;
 }
 
@@ -203,7 +205,7 @@ body {
 }
 
 .category-tools-item {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* height: 250px; */
 }
 
@@ -246,7 +248,12 @@ img {
   width: 36px;
   height: 36px;
   margin-right: 8px;
-  fill: #150140;
+  fill: var(--violet-color);
+}
+
+.small-svg:hover,
+.small-svg:focus {
+  fill: var(--primary-color);
 }
 
 .footer-part {
@@ -309,9 +316,15 @@ img {
 }
 
 .footer-small-svg {
-  width: 42px;
-  height: 42px;
-  margin-left: 15px;
+  width: 48px;
+  height: 48px;
+  margin-left: 18px;
+  fill: var(--primary-color);
+}
+
+.footer-small-svg:hover,
+.footer-small-svg:focus {
+  fill: var(--secondary-color);
 }
 
 .footer-copyright {
