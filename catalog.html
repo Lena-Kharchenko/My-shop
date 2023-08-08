@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" type="image/svg" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My garden&house tools</title>
+  </head>
+  
+  <body>
+    <div class="page">
+      <!--======================================= HEADER ===========================================-->
+
+      <header class="header container">
+        <nav class="navigation">
+          <a href="./index.html">
+            <img class="shop-logo" src="./assets/tools.svg" alt="tools" />
+          </a>
+
+          <ul class="head-nav">
+            <li class="head-item">
+              <a class="link head-item-link" href="./index.html"> Каталог</a>
+            </li>
+            <li class="head-item">
+              <a class="link head-item-link" href="./delivery.html"
+                >Доставка і оплата</a
+              >
+            </li>
+            <li class="head-item">
+              <a class="link head-item-link" href="./service.html">Сервіс</a>
+            </li>
+          </ul>
+        </nav>
+
+        <input
+          class="hero-input-field"
+          type="text"
+          placeholder="пошук товарів"
+        />
+
+        <ul class="contacts">
+          <li class="contact-link">
+            <a class="link contact-mail" href="mailto:email.com.ua"
+              >email.com.ua</a
+            >
+          </li>
+          <li class="contact-link">
+            <a class="link contact-phone" href="tel:+0989898989"
+              >tel:0989898989</a
+            >
+          </li>
+        </ul>
+
+        <a href="./index.html"><i class="bi bi-basket2"></i></a>
+      </header>
+      <main>
+
+        <section class="hero container">
+
+        
+            <ul class="gallery-products">
+              <!-- <li class="products-card-item">
+                <p class="category-title">
+                  <img src="" alt="">
+    
+                  
+                  Садово-паркова техніка
+                </p>
+                <p>Артикул: <span>14343789</span></p>
+                
+    
+                <figure class="figure-img">
+                  <img src="./assets/chainsaw2.jpeg" alt="chainsaw">
+              
+                </figure>
+                <p>Опис товару:</p>
+                <p>Ціна: </p>
+                <button>Купити</button>
+              </li> -->
+              </ul>
+      </main>
+
+      <footer class="footer-part container">
+        <div class="footer-menu">
+          <ul>
+            <li class="footer-item">Каталог</li>
+            <li class="footer-item">Доставка і оплата</li>
+            <li class="footer-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              Контакти
+            </li>
+          </ul>
+
+          <ul class="footer-pay">
+            <li>
+              <svg class="footer-small-svg">
+                <use href="./assets/sprite.svg#icon-visa"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="footer-small-svg">
+                <use href="./assets/sprite.svg#icon-applepay"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="footer-small-svg">
+                <use href="./assets/sprite.svg#icon-googlepay"></use>
+              </svg>
+            </li>
+          </ul>
+
+          <form class="footer-form">
+            <label class="footer-form-label" for="email">Subscribe</label>
+            <input
+              class="footer-input-field"
+              type="email"
+              placeholder="email"
+            />
+            <button class="footer-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <p class="footer-copyright">
+          © 2023 Інтернет-магазин "Майстер". Всі права захищені.
+        </p>
+      </footer>
+    </div>
+    <script type="module">
+        import { products } from "./db.js"
+
+        const gallery = document.querySelector("gallery-products");
+        const card = `
+  <li class="products-card-item">
+    <p class="category-title">
+      Садово-паркова техніка
+    </p>
+    <p>Артикул: <span>14343789</span></p>
+    <figure class="figure-img">
+      <img src="./assets/chainsaw2.jpeg" alt="chainsaw"/>
+    </figure>
+    <p>Опис товару:</p>
+    <p>Ціна: </p>
+    <button>Купити</button>
+  </li>
+  
+`;
+
+gallery.innerHTML =  card;
+
+products.filter(product => {
+    if(product.category === "Садово-паркова техніка"){
+        console.log("product:", product);
+    }
+
+});
+
+// function renderCards(){
+   
+//     return(
+//         <li class="products-card-item">
+//                 <p class="category-title">
+                
+//                   Садово-паркова техніка
+//                 </p>
+//                 <p>Артикул: <span>14343789</span></p>
+                
+    
+//                 <figure class="figure-img">
+//                   <img src="./assets/chainsaw2.jpeg" alt="chainsaw"/>
+              
+//                 </figure>
+//                 <p>Опис товару:</p>
+//                 <p>Ціна: </p>
+//                 <button>Купити</button>
+//               </li>
+
+//     )
+
+// }
+
+      </script>
+  </body>
+
+</html>
