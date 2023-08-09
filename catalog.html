@@ -18,7 +18,7 @@
     />
     <title>My garden&house tools</title>
   </head>
-  
+
   <body>
     <div class="page">
       <!--======================================= HEADER ===========================================-->
@@ -65,13 +65,11 @@
 
         <a href="./index.html"><i class="bi bi-basket2"></i></a>
       </header>
+
       <main>
-
         <section class="hero container">
-
-        
-            <ul class="gallery-products">
-              <!-- <li class="products-card-item">
+          <ul class="gallery-products">
+            <!-- <li class="products-card-item">
                 <p class="category-title">
                   <img src="" alt="">
     
@@ -89,7 +87,8 @@
                 <p>Ціна: </p>
                 <button>Купити</button>
               </li> -->
-              </ul>
+          </ul>
+        </section>
       </main>
 
       <footer class="footer-part container">
@@ -137,10 +136,10 @@
       </footer>
     </div>
     <script type="module">
-        import { products } from "./db.js"
+      import { products } from "./db.js";
 
-        const gallery = document.querySelector("gallery-products");
-        const card = `
+      const gallery = document.querySelector("gallery-products");
+      const card = `
   <li class="products-card-item">
     <p class="category-title">
       Садово-паркова техніка
@@ -156,40 +155,36 @@
   
 `;
 
-gallery.innerHTML =  card;
+      gallery.innerHTML = card;
 
-products.filter(product => {
-    if(product.category === "Садово-паркова техніка"){
-        console.log("product:", product);
-    }
+      products.filter((product) => {
+        if (product.category === "Садово-паркова техніка") {
+          console.log("product:", product);
+        }
+      });
 
-});
+      // function renderCards(){
 
-// function renderCards(){
-   
-//     return(
-//         <li class="products-card-item">
-//                 <p class="category-title">
-                
-//                   Садово-паркова техніка
-//                 </p>
-//                 <p>Артикул: <span>14343789</span></p>
-                
-    
-//                 <figure class="figure-img">
-//                   <img src="./assets/chainsaw2.jpeg" alt="chainsaw"/>
-              
-//                 </figure>
-//                 <p>Опис товару:</p>
-//                 <p>Ціна: </p>
-//                 <button>Купити</button>
-//               </li>
+      //     return(
+      //         <li class="products-card-item">
+      //                 <p class="category-title">
 
-//     )
+      //                   Садово-паркова техніка
+      //                 </p>
+      //                 <p>Артикул: <span>14343789</span></p>
 
-// }
+      //                 <figure class="figure-img">
+      //                   <img src="./assets/chainsaw2.jpeg" alt="chainsaw"/>
 
-      </script>
+      //                 </figure>
+      //                 <p>Опис товару:</p>
+      //                 <p>Ціна: </p>
+      //                 <button>Купити</button>
+      //               </li>
+
+      //     )
+
+      // }
+    </script>
   </body>
-
 </html>
