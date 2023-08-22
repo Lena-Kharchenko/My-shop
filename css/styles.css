@@ -292,15 +292,7 @@ link, a {
       
     }
 
-    .footer-form {
-      display: flex;
-      flex-direction: column;
-      margin-right: auto;
-      margin-left: auto;
-      
-  
-    }
-  
+   
     .footer-form-label {
 
       font-size: 18px;
@@ -429,18 +421,20 @@ link, a {
 /* =================================== TABLET ================================ */
 
 @media screen and (min-width: 768px) {
+
+
   
   .head-item:not(:last-child) {
-      margin-right: 24px;
+      margin-right: 10px;
     }
   
     .head-nav {
       display: flex;
-      margin-left: 36px;
+      margin-left: 15px;
     }
   
     .head-item-link {
-      font-size: 18px;
+      font-size: 20px;
       color: var(--primary-color);
       transition: color var(--transition-dur-func);
     }
@@ -452,9 +446,9 @@ link, a {
   
     
      .hero-input-field {
-        margin-left: auto;
+        margin-left: 15px;
         margin-right: auto;
-        width: 300px;
+        width: 200px;
         border: 3px solid var(--secondary-color);
         border-radius: 4px;
         padding: 5px 15px;
@@ -466,7 +460,7 @@ link, a {
     
       .contact-mail,
       .contact-phone {
-        font-size: 18px;
+        font-size: 20px;
         color: var(--primary-color);
         transition: color var(--transition-dur-func);
       }
@@ -482,7 +476,8 @@ link, a {
       }
     
       .contact-link {
-        padding-right: 24px;
+        margin-left: 15px;
+        padding-right: 15px;
       }
     
       .bi-basket2 {
@@ -497,10 +492,64 @@ link, a {
   
 }
 
-/* .mobile-menu-open {
+ .category-tools {
+   
+   gap: 10px;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(4, auto);
+ }
+
+img {
+  
+  width: 220px;
+  height: 190px;
+  
+}
+
+.figure-img {
+  
+  max-width: 220px;
+  height: 190px;
+ 
+}
+
+.mobile-menu-open {
 
   display: none;
-} */
+}
+
+.products-card-item {
+  padding: 8px;
+  border-radius: 4px;
+  width: 300px;
+  background-color: #fff;
+  
+
+}
+
+.gallery-products {
+
+  display: flex;
+  gap: 15px;
+
+
+}
+
+.card-btn {
+
+  width: 280px;
+  color: #30ffb4;
+  background-color: var(--violet-color);
+  border-radius: 4px;
+  padding: 5px 10px;
+  
+}
+
+.card-price span {
+
+  font-size: 20px;
+  font-weight: 700;
+}
 }
 
 /* .head-item:not(:last-child) {
@@ -755,3 +804,5 @@ img {
 .bi-geo-alt-fill {
   color: var(--secondary-color);
 } */
+
+

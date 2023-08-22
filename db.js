@@ -14,7 +14,7 @@ export const products = [
   {
     articule: 1000001,
     category: "Садово-паркова техніка",
-    img: "./assets/products/pl4615s.jpg",
+    img: ".assets/products/photo_2023-08-10_18-39-40.jpg",
     name: "Газонокосарка",
     brand: "Sturm",
     model: "PL 4615S",
@@ -29,7 +29,8 @@ export const products = [
         "Країна-виробник": "Китай",
       },
     ],
-    price: "16068",
+    price: "15000",
+    available: true
   },
   {
     articule: 1000002,
@@ -49,7 +50,8 @@ export const products = [
         "Країна-виробник": "Китай",
       },
     ],
-    price: "5964",
+    price: "9000",
+    available: false
   },
 
   {

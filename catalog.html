@@ -68,23 +68,7 @@
 
       <main>
         <section class="hero container">
-          <ul class="gallery-products">
-            <!-- <li class="products-card-item">
-              <p class="category-title">
-                <img src="" alt="" />
-
-                Садово-паркова техніка
-              </p>
-              <p>Артикул: <span>14343789</span></p>
-
-              <figure class="figure-img">
-                <img src="./assets/chainsaw2.jpeg" alt="chainsaw" />
-              </figure>
-              <p>Опис товару:</p>
-              <p>Ціна:</p>
-              <button>Купити</button>
-            </li> -->
-          </ul>
+          <ul class="gallery-products"></ul>
         </section>
       </main>
 
@@ -136,52 +120,28 @@
       import { products } from "./db.js";
 
       const gallery = document.querySelector(".gallery-products");
-      const card = `
-  <li class="products-card-item">
-    <p class="category-title">
-      Садово-паркова техніка
-    </p>
-    <p>Артикул: <span>14343789</span></p>
-    <figure class="figure-img">
-      <img src="./assets/chainsaw2.jpeg" alt="chainsaw"/>
-    </figure>
-    <p>Опис товару:</p>
-    <p>Ціна: </p>
-    <button>Купити</button>
-  </li>
-  
-`;
-
-      gallery.innerHTML = card;
 
       products.filter((product) => {
         if (product.category === "Садово-паркова техніка") {
           console.log("product:", product);
+
+          const card = `
+            <li class="products-card-item">
+              <p class="category-title">Садово-паркова техніка</p>
+              <p>Артикул: <span>${product.articule}</span></p>
+              <figure class="figure-img">
+                <img src=${product.img} alt="${product.name}" />
+              </figure>
+              <p><span>${product.brand}</span> <span>${product.model}</span></p>
+              <p>Опис товару: <span>${product.description}</span></p>
+              <p class="card-price">Ціна: <span >${product.price}</span></p>
+              <button class="card-btn" disabled>Купити</button>
+            </li>
+          `;
+
+          // gallery.innerHTML += card;
         }
       });
-
-      // function renderCards(){
-
-      //     return(
-      //         <li class="products-card-item">
-      //                 <p class="category-title">
-
-      //                   Садово-паркова техніка
-      //                 </p>
-      //                 <p>Артикул: <span>14343789</span></p>
-
-      //                 <figure class="figure-img">
-      //                   <img src="./assets/chainsaw2.jpeg" alt="chainsaw"/>
-
-      //                 </figure>
-      //                 <p>Опис товару:</p>
-      //                 <p>Ціна: </p>
-      //                 <button>Купити</button>
-      //               </li>
-
-      //     )
-
-      // }
     </script>
   </body>
 </html>
