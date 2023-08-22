@@ -339,6 +339,7 @@ export const products = [
   {
     articule: 2000005,
     category: "Електроінструмент",
+    img: "./assets/products/GA5030.jpg",
     name: "Кутова шліфмашина",
     brand: "Makita",
     model: "GA5030",

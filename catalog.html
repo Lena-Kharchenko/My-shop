@@ -122,7 +122,7 @@
       const gallery = document.querySelector(".gallery-products");
 
       products.filter((product) => {
-        if (product.category === "Садово-паркова техніка") {
+        if (product.category === `Електроінструмент`) {
           console.log("product:", product);
 
           const card = `
@@ -132,8 +132,8 @@
               <figure class="figure-img">
                 <img src=${product.img} alt="${product.name}" />
               </figure>
-              <p><span class="name">${product.name}</span>
-              <p><span class="brand">${product.brand}</span>   <span class="model">${product.model}</span></p>
+              <p class="name"><span >${product.name}</span>
+              <p class="brand"><span >${product.brand}</span>   <span class="model">${product.model}</span></p>
               <p class="description">Опис товару: <span>${product.description}</span></p>
 
               <p class="card-price">Ціна: <span>${product.price} грн</span></p>
