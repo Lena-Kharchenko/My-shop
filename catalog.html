@@ -127,14 +127,16 @@
 
           const card = `
             <li class="products-card-item">
-              <p class="category-title">Садово-паркова техніка</p>
+              <p class="category-title"><span>${product.category}</span></p>
               <p>Артикул: <span>${product.articule}</span></p>
               <figure class="figure-img">
                 <img src=${product.img} alt="${product.name}" />
               </figure>
-              <p><span>${product.brand}</span> <span>${product.model}</span></p>
-              <p>Опис товару: <span>${product.description}</span></p>
-              <p class="card-price">Ціна: <span >${product.price}</span></p>
+              <p><span class="name">${product.name}</span>
+              <p><span class="brand">${product.brand}</span>   <span class="model">${product.model}</span></p>
+              <p class="description">Опис товару: <span>${product.description}</span></p>
+
+              <p class="card-price">Ціна: <span>${product.price} грн</span></p>
               <button class="card-btn" disabled>Купити</button>
             </li>
           `;
