@@ -13,16 +13,12 @@
   </head>
 
   <body>
+    <!--======================================= HEADER ===========================================-->
+
     <header class="header container">
       <nav class="navigation">
         <a href="./index.html">
-          <img
-            class="shop-logo"
-            src="./assets/tools.svg"
-            alt="tools"
-            width="52"
-            height="52"
-          />
+          <img class="shop-logo" src="./assets/tools.svg" alt="tools" />
         </a>
 
         <ul class="head-nav">
@@ -55,7 +51,50 @@
         </li>
       </ul>
 
-      <a href="./index.html"><i class="bi bi-basket2"></i></a>
+      <a href="./basket.html"><i class="bi bi-basket2"></i></a>
+
+      <button class="mobile-menu-open" data-menu-open>
+        <i class="bi bi-list"></i>
+      </button>
+
+      <!-- =================================== MOBILE-MENU ======================================= -->
+
+      <div class="mobile-menu-window container mobile-container" data-menu>
+        <button type="button" class="mobile-close-btn" data-menu-close>
+          <i class="bi bi-x"></i>
+        </button>
+
+        <ul class="mobile-head-nav">
+          <li class="mobile-head-item">
+            <a class="link mobile-head-item-link" href="./index.html">
+              Каталог</a
+            >
+          </li>
+          <li class="mobile-head-item">
+            <a class="link mobile-head-item-link" href="./delivery.html"
+              >Доставка і оплата</a
+            >
+          </li>
+          <li class="mobile-head-item">
+            <a class="link mobile-head-item-link" href="./service.html"
+              >Сервіс</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts">
+          <li class="mobile-contact-link">
+            <a class="link mobile-contact-mail" href="mailto:email.com.ua"
+              >email.com.ua</a
+            >
+          </li>
+          <li class="mobile-contact-link">
+            <a class="link mobile-contact-phone" href="tel:+0989898989"
+              >tel:0989898989</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -129,5 +168,7 @@
         © 2023 Інтернет-магазин "Майстер". Всі права захищені.
       </p>
     </footer>
+
+    <script src="./mobile-menu.js" type="module"></script>
   </body>
 </html>
