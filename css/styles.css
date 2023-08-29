@@ -437,6 +437,10 @@ a {
     margin-right: 10px;
   }
 
+  /* .mobile-menu-window {
+    display: none;
+  } */
+
   .head-nav {
     display: flex;
     margin-left: 15px;
