@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <title>My garden&house tools</title>
+    <title>${product.category}</title>
   </head>
 
   <body>
@@ -111,6 +111,7 @@
 
       <main>
         <section class="hero container">
+          <button onclick="myFunction()">Click me</button>
           <ul class="gallery-products"></ul>
         </section>
       </main>
@@ -187,6 +188,10 @@
           gallery.innerHTML += card;
         }
       });
+
+      function myFunction() {
+        console.log("Categoty is ");
+      }
     </script>
     <script src="./mobile-menu.js" type="module"></script>
   </body>
