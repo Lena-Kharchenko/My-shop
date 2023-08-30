@@ -914,15 +914,23 @@ img {
 }
 
 .mobile-head-nav {
-  padding-left: 40px;
+  
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   padding-top: 80px;
+  
 }
 
+
+
 .mobile-head-item:not(:last-child) {
+  
   padding-bottom: 40px;
 }
 
 .mobile-head-item-link {
+  
   font-weight: 600;
   font-size: 32px;
   line-height: 1.11;
@@ -930,6 +938,7 @@ img {
   text-transform: capitalize;
   color: var(--secondary-color);
   transition: color var(--transition-dur-func);
+ 
 }
 
 .mobile-head-item-link:hover,
