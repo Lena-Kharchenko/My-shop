@@ -106,7 +106,6 @@
 
     <main>
       <section class="hero container">
-        <button onclick="myFunction()">Click me</button>
         <ul class="gallery-products"></ul>
       </section>
     </main>
@@ -152,7 +151,11 @@
     </footer>
 
     <script type="module">
+      //render
       import { products } from "./db.js";
+      // import { categoryId } from "./index.html";
+
+      // console.log("categoryId", categoryId);
 
       const gallery = document.querySelector(".gallery-products");
 
@@ -179,12 +182,6 @@
           gallery.innerHTML += card;
         }
       });
-    </script>
-
-    <script>
-      function myFunction() {
-        console.log("category is");
-      }
     </script>
 
     <script src="./mobile-menu.js" type="module"></script>

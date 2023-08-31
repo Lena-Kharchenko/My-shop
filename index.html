@@ -100,7 +100,6 @@
     </div>
     </header>
 
-    
 
     <!--======================================= HERO ===========================================-->
     <main>
@@ -108,7 +107,7 @@
         <h1 class="shop-title">Інтернет-магазин "Майстер"</h1>
         <h2 class="category">Категорії товарів</h2>
         <ul class="category-tools">
-          <li class="category-tools-item">
+          <li class="category-tools-item" id="garden-park_technik" onclick="handleGetIdByCategory(this.id)">
             <span class="category-title">
             
               <svg class="small-svg">
@@ -125,7 +124,7 @@
           
             </figure>
           </li>
-          <li class="category-tools-item">
+          <li class="category-tools-item" id="electro_tools" onclick="handleGetIdByCategory(this.id)">
             <span class="category-title">
               <svg class="small-svg">
                 <use href="./assets/sprite.svg#icon-angle-grinder1"></use>
@@ -140,7 +139,7 @@
             </figure>
           </li>
 
-          <li class="category-tools-item">
+          <li class="category-tools-item" id="accu-tools" onclick="handleGetIdByCategory(this.id)">
             <span class="category-title">
               <svg class="small-svg">
                 <use href="./assets/sprite.svg#icon-driller1"></use>
@@ -277,10 +276,20 @@
       </p>
     </footer>
   
+<script>
 
+  let categoryId;
+
+      // event listener
+  function handleGetIdByCategory(id) {
+        event.preventDefault();
+        categoryId = id;
+        console.log("category is:", id);
+      }
+    </script>
   
 
-
+   
   <script src="./mobile-menu.js" type="module"></script>
   </body>
 </html>
