@@ -13,13 +13,12 @@ for (let handleClickOnElement of handleClickOnElements) {
 
         //  відслідковую id кожного елемента категорії
         
-        
-        const categoryId = event.currentTarget.getAttribute('id');
-        console.log(categoryId);
+
+       const categoryId = event.currentTarget.getAttribute('id');
+        console.log("my id is:", categoryId);
         
     });
 
 }
-
 
 
