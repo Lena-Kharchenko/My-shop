@@ -107,7 +107,9 @@
         <h1 class="shop-title">Інтернет-магазин "Майстер"</h1>
         <h2 class="category">Категорії товарів</h2>
         <ul class="category-tools">
-          <li class="category-tools-item" id="garden-park_technik" onclick="handleGetIdByCategory(this.id)">
+
+          <li class="category-tools-item" id="garden-park_technik">
+            
             <span class="category-title">
             
               <svg class="small-svg">
@@ -124,7 +126,7 @@
           
             </figure>
           </li>
-          <li class="category-tools-item" id="electro_tools" onclick="handleGetIdByCategory(this.id)">
+          <li class="category-tools-item" id="electro_tools" >
             <span class="category-title">
               <svg class="small-svg">
                 <use href="./assets/sprite.svg#icon-angle-grinder1"></use>
@@ -138,8 +140,8 @@
               
             </figure>
           </li>
-
-          <li class="category-tools-item" id="accu-tools" onclick="handleGetIdByCategory(this.id)">
+<!-- onclick="handleGetIdByCategory(this.id)" -->
+          <li class="category-tools-item" id="accu-tools" >
             <span class="category-title">
               <svg class="small-svg">
                 <use href="./assets/sprite.svg#icon-driller1"></use>
@@ -276,7 +278,7 @@
       </p>
     </footer>
   
-<script>
+<!-- <script>
 
   let categoryId;
 
@@ -286,10 +288,10 @@
         categoryId = id;
         console.log("category is:", id);
       }
-    </script>
+    </script> -->
   
 
-   
+   <script src="./handleCLick.js" type="module"></script>
   <script src="./mobile-menu.js" type="module"></script>
   </body>
 </html>
