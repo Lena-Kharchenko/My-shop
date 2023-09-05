@@ -13,7 +13,7 @@ export const products = [
   //  Газонокосарки ===============================================================================
   {
     articule: 1000001,
-    id:"garden-park_technik",
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/pl4615s.jpg",
     name: "Газонокосарка",
@@ -31,10 +31,11 @@ export const products = [
       },
     ],
     price: "15000",
-    available: true
+    available: true,
   },
   {
     articule: 1000002,
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/gk35380.jpg",
     name: "Газонокосарка",
@@ -52,11 +53,12 @@ export const products = [
       },
     ],
     price: "9000",
-    available: false
+    available: false,
   },
 
   {
     articule: 1000003,
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/FEM1400M.jpeg",
     name: "Газонокосарка",
@@ -78,6 +80,7 @@ export const products = [
 
   {
     articule: 1000004,
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/ALKO46.jpg",
     name: "Газонокосарка",
@@ -101,6 +104,7 @@ export const products = [
 
   {
     articule: 1000005,
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/sparta25.jpg",
     name: "Бензокоса",
@@ -120,6 +124,7 @@ export const products = [
 
   {
     articule: 1000006,
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/bk5225a.jpg",
     name: "Бензокоса",
@@ -139,6 +144,7 @@ export const products = [
 
   {
     articule: 1000007,
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/ЗТС1800.jpg",
     name: "Електрокоса",
@@ -157,6 +163,7 @@ export const products = [
 
   {
     articule: 1000008,
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/BCE2020.jpeg",
     name: "Електрокоса",
@@ -175,6 +182,7 @@ export const products = [
 
   {
     articule: 1000009,
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/GT750.jpeg",
     name: "Електрокоса",
@@ -195,6 +203,7 @@ export const products = [
 
   {
     articule: 1000010,
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/MS180.jpg",
     name: "Бензопила",
@@ -216,6 +225,7 @@ export const products = [
 
   {
     articule: 1000011,
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/БП5225ТН.jpg",
     name: "Бензопила",
@@ -237,6 +247,7 @@ export const products = [
 
   {
     articule: 1000012,
+    id: "garden-park_technik",
     category: "Садово-паркова техніка",
     img: "./assets/products/K1800.jpg",
     name: "Електропила",
@@ -258,7 +269,7 @@ export const products = [
   // ================================= Категорія: Електроінструмент ========================================
   {
     articule: 2000001,
-    id:"electro_tools",
+    id: "electro_tools",
     category: "Електроінструмент",
     img: "./assets/products/BM280T.jpeg",
     name: "Дриль-шурупокрут",
@@ -280,6 +291,7 @@ export const products = [
   },
   {
     articule: 2000002,
+    id: "electro_tools",
     category: "Електроінструмент",
     img: "./assets/products/HR2470.jpg",
     name: "Перфоратор",
@@ -300,6 +312,7 @@ export const products = [
   },
   {
     articule: 2000003,
+    id: "electro_tools",
     category: "Електроінструмент",
     img: "./assets/products/bs8585.jpg",
     name: "Стрічкова шліфмашина",
@@ -319,6 +332,7 @@ export const products = [
   },
   {
     articule: 2000004,
+    id: "electro_tools",
     category: "Електроінструмент",
     img: "./assets/products/4329.jpg",
     name: "Лобзик",
@@ -340,6 +354,7 @@ export const products = [
   },
   {
     articule: 2000005,
+    id: "electro_tools",
     category: "Електроінструмент",
     img: "./assets/products/GA5030.jpg",
     name: "Кутова шліфмашина",
@@ -362,7 +377,7 @@ export const products = [
   // ========================== Категорія: Акумуляторний інструмент ====================================
   {
     articule: 3000001,
-    id:"accu-tools",
+    id: "accu-tools",
     category: "Акумуляторний інструмент",
     img: "./assets/products/cs4030.jpg",
     name: "Акумуляторна пила",
@@ -384,6 +399,7 @@ export const products = [
   },
   {
     articule: 3000002,
+    id: "accu-tools",
     category: "Акумуляторний інструмент",
     img: "./assets/products/akg1823p.jpg",
     name: "Акумуляторний кущоріз",
@@ -407,6 +423,7 @@ export const products = [
 
   {
     articule: 3000003,
+    id: "accu-tools",
     category: "Акумуляторний інструмент",
     img: "./assets/products/gt3530cl.jpg",
     name: "Акумуляторна коса",
@@ -431,6 +448,7 @@ export const products = [
 
   {
     articule: 4000001,
+    id: "welding-tools",
     category: "Зварювальна техніка",
     img: "./assets/products/sa97i240p.jpg",
     name: "Зварювальний інвертор",
@@ -453,6 +471,7 @@ export const products = [
 
   {
     articule: 4000002,
+    id: "welding-tools",
     category: "Зварювальна техніка",
     img: "./assets/products/paton.jpeg",
     name: "Зварювальний інвертор",
@@ -475,6 +494,7 @@ export const products = [
 
   {
     articule: 4000003,
+    id: "welding-tools",
     category: "Зварювальна техніка",
     img: "./assets/products/mig305.jpeg",
     name: "Зварювальний напівавтомат",
@@ -499,6 +519,7 @@ export const products = [
 
   {
     articule: 5000001,
+    id: "compressor-tools",
     category: "Компресори",
     img: "./assets/products/fl50.jpg",
     name: "Компресор",
@@ -522,6 +543,7 @@ export const products = [
 
   {
     articule: 5000002,
+    id: "compressor-tools",
     category: "Компресори",
     img: "./assets/products/VBM2T0.4100.jpeg",
     name: "Компресор",
@@ -545,6 +567,7 @@ export const products = [
 
   {
     articule: 5000003,
+    id: "compressor-tools",
     category: "Компресори",
     img: "./assets/products/procraft24.jpg",
     name: "Компресор",
@@ -570,6 +593,7 @@ export const products = [
 
   {
     articule: 6000001,
+    id: "walk-behind_tractor",
     category: "Мотоблоки",
     img: "./assets/products/MB1080DE.jpg",
     name: "Мотоблок",
@@ -593,6 +617,7 @@ export const products = [
 
   {
     articule: 6000002,
+    id: "walk-behind_tractor",
     category: "Мотоблоки",
     img: "./assets/products/MB2061D.jpg",
     name: "Мотоблок",
@@ -616,6 +641,7 @@ export const products = [
 
   {
     articule: 6000003,
+    id: "walk-behind_tractor",
     category: "Мотоблоки",
     img: "./assets/products/MB2070B.jpg",
     name: "Мотоблок",
@@ -639,6 +665,7 @@ export const products = [
 
   {
     articule: 6000004,
+    id: "walk-behind_tractor",
     category: "Мотоблоки",
     img: "./assets/products/EPT1400.jpg",
     name: "Культиватор",
@@ -664,6 +691,7 @@ export const products = [
 
   {
     articule: 7000001,
+    id: "concrete_mixer",
     category: "Бетонозмішувачі",
     img: "./assets/products/EW2125P.jpg",
     name: "Бетонозмішувач",
@@ -687,6 +715,7 @@ export const products = [
 
   {
     articule: 7000002,
+    id: "concrete_mixer",
     category: "Бетонозмішувачі",
     img: "./assets/products/SB9180P.jpg",
     name: "Бетонозмішувач",
@@ -710,6 +739,7 @@ export const products = [
 
   {
     articule: 7000003,
+    id: "concrete_mixer",
     category: "Бетонозмішувачі",
     img: "./assets/products/EW1230.jpg",
     name: "Бетонозмішувач",
